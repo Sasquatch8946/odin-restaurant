@@ -4,7 +4,6 @@ export const loadHome = () => {
     const contentDiv = document.querySelector("div#content");
     const homeBtn = document.querySelector("nav>button:nth-child(1)");
     homeBtn.addEventListener("click", () => {
-        console.log("hello from the home button!");
         contentDiv.removeChild(contentDiv.firstChild);
         const subContentDiv = document.createElement("div");
         subContentDiv.classList.add("sub-content");

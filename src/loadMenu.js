@@ -19,7 +19,6 @@ function createMenuItem(name, description, image) {
 export const loadMenu = () => {
     const menu = document.querySelector("nav>button:nth-child(2)");
     menu.addEventListener("click", () => {
-        console.log("hello from the menu button!");
         const contentDiv = document.querySelector("div#content");
         contentDiv.removeChild(contentDiv.firstChild);
         const subContentDiv = document.createElement("div");
