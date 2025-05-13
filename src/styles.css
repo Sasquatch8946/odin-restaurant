@@ -49,3 +49,17 @@ button {
     border-radius: 2px;
     background-color: lightblue;
 }
+
+.menu-item {
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    background-color: lightgrey;
+    row-gap: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.menu-item > div:nth-child(1) {
+    font-weight: bold;
+    font-size: 2rem;
+}
