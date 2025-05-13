@@ -52,7 +52,7 @@ button {
 
 .menu-item {
     display: grid;
-    grid-template-rows: repeat(3, max-content);
+    grid-template-rows: repeat(4, max-content);
     background-color: lightgrey;
     row-gap: 10px;
     padding: 1rem;
@@ -69,4 +69,5 @@ button {
     background-color: lightgrey;
     width: 100%;
     grid-template-rows: repeat(4, 1fr);
+    padding: 10px;
 }
