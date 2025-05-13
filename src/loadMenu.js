@@ -20,17 +20,12 @@ function createMenuItem(name, description, image, price) {
 }
 
 export const loadMenu = () => {
-    const menu = document.querySelector("nav>button:nth-child(2)");
-    menu.addEventListener("click", () => {
-        const contentDiv = document.querySelector("div#content");
-        contentDiv.removeChild(contentDiv.firstChild);
-        const subContentDiv = document.createElement("div");
-        subContentDiv.classList.add("sub-content");
-        const item1 = createMenuItem("Pancakes", "Fluffy, crisp, and delightful!", pancakes, "$9.99");
-        const item2 = createMenuItem("Bacon", "Meaty, greasy, will clog your arteries!", bacon, "$4.99");
-        subContentDiv.appendChild(item1);
-        subContentDiv.appendChild(item2);
-        contentDiv.appendChild(subContentDiv);
-        
-    });
+    const contentDiv = document.querySelector("div#content");
+    const subContentDiv = document.createElement("div");
+    subContentDiv.classList.add("sub-content");
+    const item1 = createMenuItem("Pancakes", "Fluffy, crisp, and delightful!", pancakes, "$9.99");
+    const item2 = createMenuItem("Bacon", "Meaty, greasy, will clog your arteries!", bacon, "$4.99");
+    subContentDiv.appendChild(item1);
+    subContentDiv.appendChild(item2);
+    contentDiv.appendChild(subContentDiv);
 }
